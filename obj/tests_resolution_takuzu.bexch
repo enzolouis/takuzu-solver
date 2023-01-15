@@ -1,0 +1,26 @@
+[GENERATED OBJECT FILE]
+b__tests_resolution_takuzu.o
+[PROJECT FILES]
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr
+20230106231538 83c8031672a9b7e4b50ad869740ebe0d
+[BOUND OBJECT FILES]
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\chiffre.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\coordonnee.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\rangee.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\grille.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\affichage.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\remplir_grille_takuzu.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\resolution_takuzu.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\tests_resolution_takuzu.o
+[GENERATED SOURCE FILES]
+b__tests_resolution_takuzu.ads
+b__tests_resolution_takuzu.adb
+b__tests_resolution_takuzu.ali
+[RESULTING OPTIONS]
+-LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\
+-LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\ember\AppData\Local\Temp\GNAT-TEMP-000003.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2021
+[MAIN BASE NAME]
+resolution_takuzu
+[COMPILER PATH]
+c:\gnat\2021\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\resolution_takuzu.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr
+20230106231440 1d90c5f25d07d461621ff9cd87179b52
