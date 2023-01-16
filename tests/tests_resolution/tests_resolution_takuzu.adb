@@ -51,7 +51,7 @@ begin
    test (g1, "*** Takuzu grille tres tres facile : grille 1 ***");
    test (g2, "***    Takuzu grille tres facile : grille 2   ***");
    test (g3, "***    Takuzu grille tres facile : grille 3   ***");
-   -- test (g4, "***      Takuzu grille moyenne : grille 4     ***");
+   test (g4, "***      Takuzu grille moyenne : grille 4     ***");
    --test (g5, "***     Takuzu grille difficile : grille 5    ***");
    --test (g6, "***  Takuzu grille tres difficile : grille 6  ***");
    --test (g7, "***     Takuzu grille taille 10 : grille 7    ***");

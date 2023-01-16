@@ -6,19 +6,19 @@ with Rangee;     use Rangee;
 package Resolution_Takuzu is
 
 
-   procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : out Boolean);
+   procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : in out Boolean);
 
-   procedure RegleADoublonColonne(g: in out Type_Grille; Col:  in Integer; maj : out Boolean);
+   procedure RegleADoublonColonne(g: in out Type_Grille; Col:  in Integer; maj : in out Boolean);
 
-   procedure RegleBLigne(g:in out Type_Grille; L:in Integer; maj : out Boolean);
+   procedure RegleBLigne(g:in out Type_Grille; L:in Integer; maj : in out Boolean);
 
-   procedure RegleBColonne(g: in out Type_Grille; Col:in Integer; maj : out Boolean);
+   procedure RegleBColonne(g: in out Type_Grille; Col:in Integer; maj : in out Boolean);
 
-   -- Regle C.1 : complète la lignes l qui ont déj�  4 UN ou 4 ZERO
+   -- Regle C.1 : complete la lignes l qui ont deja  4 UN ou 4 ZERO
    procedure RegleCCompleterLigne
      (G : in out Type_Grille; L : in Integer; V : in Type_Chiffre);
 
-   -- Regle C.2: complète les colonnes qui ont déj�  4 UN ou 4 ZERO
+   -- Regle C.2: complete les colonnes qui ont deja 4 UN ou 4 ZERO
    procedure RegleCCompleterColonne
      (G : in out Type_Grille; Col : in Integer; V : in Type_Chiffre);
 

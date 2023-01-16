@@ -7,7 +7,7 @@ with Coordonnee; use Coordonnee;
 with Affichage; use Affichage;
 
 package body Resolution_Takuzu is
-    procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : out Boolean) is
+    procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : in out Boolean) is
         rangee:Type_rangee;
         coord:Type_Coordonnee;
     begin
@@ -42,7 +42,7 @@ package body Resolution_Takuzu is
         end loop;
     end RegleADoublonLigne;
 
-    procedure RegleADoublonColonne(g: in out Type_Grille; Col:  in Integer; maj : out Boolean) is
+    procedure RegleADoublonColonne(g: in out Type_Grille; Col:  in Integer; maj : in out Boolean) is
         rangee:Type_rangee;
         coord:Type_Coordonnee;
     begin
@@ -77,7 +77,7 @@ package body Resolution_Takuzu is
         end loop;
     end RegleADoublonColonne;
    
-    procedure RegleBLigne(G : in out Type_Grille; L : in Integer; maj : out Boolean) is
+    procedure RegleBLigne(G : in out Type_Grille; L : in Integer; maj : in out Boolean) is
         rangee:Type_Rangee;
         coord:Type_Coordonnee;
     begin
@@ -95,7 +95,7 @@ package body Resolution_Takuzu is
         end loop;
     end RegleBLigne;
 
-    procedure RegleBColonne(G : in out Type_Grille; Col : in Integer; maj : out Boolean) is
+    procedure RegleBColonne(G : in out Type_Grille; Col : in Integer; maj : in out Boolean) is
         rangee:Type_Rangee;
         coord:Type_Coordonnee;
     begin
@@ -115,11 +115,14 @@ package body Resolution_Takuzu is
     -- cette fonction rempli les cases vides d'un Ligne d'une Grille par V de type_chiffre (1 ou 0)
     procedure RegleCCompleterLigne(G : in out Type_Grille; L : in Integer; V : in Type_Chiffre) is
         C : Type_Coordonnee; -- coordonee C
+		  rangee:Type_Rangee;
     begin
+		rangee := extraireLigne(G, L);
         for x in 1..Taille(G) loop -- tque il reste une case 
             C := ConstruireCoordonnees(L, x); -- maj de C
             if estCaseVide(G, C) then -- si la case courante est vide alors on lui donne la valeur V
                 g := FixerChiffre(G, C, V);
+				  rangee := AjouterChiffre(rangee, x, V);
             end if;
         end loop;
     end RegleCCompleterLigne;
@@ -127,11 +130,14 @@ package body Resolution_Takuzu is
     -- cette fonction rempli les cases vides d'une Colone d'une Grille par V de type_chiffre (1 ou 0)
     procedure RegleCCompleterColonne(G : in out Type_Grille; Col : in Integer; V : in Type_Chiffre) is
         C : Type_Coordonnee; -- coordonee C
+		  rangee:Type_Rangee;
     begin
+	 rangee := extraireColonne(G, Col);
         for x in 1..Taille(G) loop
             C := ConstruireCoordonnees(x, Col); -- maj de C
             if estCaseVide(G, C) then -- si la case courante est vide alors on lui donne la valeur V
                 g := FixerChiffre(G, C, V);
+					 rangee := AjouterChiffre(rangee, x, V);
             end if;
         end loop;
     end RegleCCompleterColonne;
@@ -166,40 +172,48 @@ package body Resolution_Takuzu is
    
     procedure ResoudreTakuzu (G : in out Type_Grille; trouve : out Boolean) is
         n:Integer;
-        rangee2:Type_Rangee;
+        rangee_courante:Type_Rangee;
         maj:Boolean;
     begin
         trouve := false;
         n := Taille(G);
         maj := True;
-        while not EstRemplie(G) loop -- ajouter le and maj (marche pas le systeme actuellement)
+        while not EstRemplie(G) and maj loop
+		  maj := false;
             for x in 1..n loop
-				RegleADoublonLigne(G, x, maj);
-				RegleBLigne(G, x, maj);
-				rangee2 := extraireLigne(G, x);
+				rangee_courante := extraireLigne(G, x);
+				if nombreChiffresConnus(rangee_courante) /= n then
+					RegleADoublonLigne(G, x, maj);
+					RegleBLigne(G, x, maj);
 				
-				if nombreChiffresDeValeur(rangee2, UN) = n / 2 then
-					RegleCCompleterLigne(G, x, ZERO);
-					Maj := True;
-				elsif nombreChiffresDeValeur(rangee2, ZERO) = n / 2 then
-					RegleCCompleterLigne(G, x, UN);
-					Maj := True;
+					if nombreChiffresDeValeur(rangee_courante, UN) = n / 2 then
+						RegleCCompleterLigne(G, x, ZERO);
+						Maj := True;
+					elsif nombreChiffresDeValeur(rangee_courante, ZERO) = n / 2 then
+				
+						RegleCCompleterLigne(G, x, UN);
+						Maj := True;
+					end if;
 				end if;
             end loop;
             
             for x in 1..n loop
-                RegleADoublonColonne(G, x, maj);
-                RegleBColonne(G, x, maj);
-                rangee2 := extraireColonne(G, x);
+				  rangee_courante := extraireColonne(G, x);
+				  if nombreChiffresConnus(rangee_courante) /= n then
+					RegleADoublonColonne(G, x, maj);
+					RegleBColonne(G, x, maj);
                 
-                if nombreChiffresDeValeur(rangee2, UN) = n / 2 then
-                    RegleCCompleterColonne(G, x, ZERO);
-                    Maj := True;
-                elsif nombreChiffresDeValeur(rangee2, ZERO) = n / 2 then
-                    RegleCCompleterColonne(G, x, UN);
-                    Maj := True;
-                end if;
+					if nombreChiffresDeValeur(rangee_courante, UN) = n / 2 then
+						RegleCCompleterColonne(G, x, ZERO);
+						Maj := True;
+					elsif nombreChiffresDeValeur(rangee_courante, ZERO) = n / 2 then
+					 
+						RegleCCompleterColonne(G, x, UN);
+						Maj := True;
+					end if;
+				  end if;
             end loop;
+				
         end loop;
         
         if EstRemplie(G) then

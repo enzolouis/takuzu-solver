@@ -276,12 +276,12 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\chiffre.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\types_tests.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\a_tester_chiffre.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\run_tests_chiffre.o
-   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\
-   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\obj\
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\chiffre.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\types_tests.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\a_tester_chiffre.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\run_tests_chiffre.o
+   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\
+   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat
