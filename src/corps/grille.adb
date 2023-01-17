@@ -121,7 +121,7 @@ package body Grille is
    begin
 	--levee d'exceptions
 	if not estCaseVide(G,C) then
-		raise CASE_VIDE;
+		raise FIXER_CHIFFRE_NON_NUL;
 	end if;
 	--fixation du chiffre
       G2 := G;
