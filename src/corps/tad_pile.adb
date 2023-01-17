@@ -17,7 +17,7 @@ package body TAD_Pile is
 
    function estVide (pile : in Type_Pile) return Boolean is
    begin
-      return p.nb_elements = 0;
+      return pile.nb_elements = 0;
    end estVide;
 
    -------------
@@ -65,8 +65,8 @@ package body TAD_Pile is
       end if;
       --corps du sous-programme
       p1 := pile;
-      p1.elements(p1.nb_elements) := 0;
       p1.nb_elements := p1.nb_elements - 1;
+      return p1;
    end depiler;
 
 end TAD_Pile;
