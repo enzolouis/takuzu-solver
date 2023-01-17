@@ -117,13 +117,12 @@ package body Grille is
    ------------------
 
    function FixerChiffre (G : in Type_Grille; C : in Type_Coordonnee; V : in Type_Chiffre) return Type_Grille is
-
       G2 : Type_Grille;
-
    begin
 	--levee d'exceptions
 	if not estCaseVide(G,C) then
-		raise 
+		raise CASE_VIDE;
+	end if;
 	--fixation du chiffre
       G2 := G;
       G2.G(ObtenirLigne(C),ObtenirColonne(C)) := V;
@@ -136,15 +135,13 @@ package body Grille is
    ---------------
 
    function ViderCase (G : in Type_Grille; C : in Type_Coordonnee) return Type_Grille is
-
       G2 : Type_Grille;
-
    begin
-
+   	--levee d'exceptions
       if estCaseVide(G,C) then
-         raise CASE_VIDE;
+         raise VIDER_CASE_VIDE;
       end if;
-
+      --vider case
       G2 := G;
       G2.G(ObtenirLigne(C),ObtenirColonne(C)) := INCONNU;
       return G2;
