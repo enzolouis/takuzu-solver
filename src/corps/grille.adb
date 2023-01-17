@@ -6,15 +6,13 @@ package body Grille is
    ----------------------
 
    function ConstruireGrille (T : Integer) return Type_Grille is
-
       grille : Type_Grille;
-
    begin
-
+	--levee des exceptions
       if T > TAILLE_MAX or T < 4 or T mod 2 /= 0 then
          raise TAILLE_GRILLE_INVALIDE;
       end if;
-
+	--construction de la grille
       grille.Taille := T;
       for l in 1 .. T loop
          for c in 1 .. T loop
@@ -22,7 +20,6 @@ package body Grille is
          end loop;
       end loop;
       return grille;
-
    end ConstruireGrille;
 
    ------------
@@ -30,11 +27,8 @@ package body Grille is
    ------------
 
    function Taille (G : in Type_Grille) return Integer is
-
    begin
-
       return G.Taille;
-
    end Taille;
 
    -----------------
@@ -42,11 +36,8 @@ package body Grille is
    -----------------
 
    function estCaseVide (G : in Type_Grille; C : in Type_Coordonnee) return Boolean is
-
    begin
-
       return G.G(ObtenirLigne(C),ObtenirColonne(C)) = INCONNU;
-
    end estCaseVide;
 
    --------------------
@@ -54,15 +45,13 @@ package body Grille is
    --------------------
 
    function ObtenirChiffre (G : in Type_Grille; C : in Type_Coordonnee) return Type_Chiffre is
-
    begin
-
+   	--levee des exceptions
       if estCaseVide(G,C) then
          raise CASE_VIDE;
       end if;
-
+	--obtentition du chiffre
       return G.G(ObtenirLigne(C),ObtenirColonne(C));
-
    end ObtenirChiffre;
 
    --------------------------
@@ -70,11 +59,8 @@ package body Grille is
    --------------------------
 
    function NombreChiffresConnus (G : in Type_Grille) return Integer is
-
       comp : Integer;
-
    begin
-
       comp := 0;
       for l in 1 .. G.Taille loop
          for c in 1 .. G.Taille loop
@@ -84,7 +70,6 @@ package body Grille is
          end loop;
       end loop;
       return comp;
-
    end NombreChiffresConnus;
 
    ----------------
@@ -93,9 +78,7 @@ package body Grille is
 
    function EstRemplie (G : in Type_Grille) return Boolean is
    begin
-
       return NombreChiffresConnus(G) = G.Taille * G.Taille;
-
    end EstRemplie;
 
    -------------------
@@ -104,19 +87,13 @@ package body Grille is
 
    function extraireLigne
      (G : in Type_Grille; L : in Integer) return Type_Rangee is
-
       R : Type_Rangee;
-
    begin
-
 		R := ConstruireRangee(Taille(G));
 		for i in 1..G.Taille loop
 			R := AjouterChiffre(R,i,G.G(L,i));
 		end loop;
-
-
       return R;
-
    end extraireLigne;
 
    ---------------------
@@ -126,16 +103,13 @@ package body Grille is
    function extraireColonne
      (G : in Type_Grille; C : in Integer) return Type_Rangee
    is
-
       R : Type_Rangee;
-
    begin
       R := ConstruireRangee(Taille(G));
 		for i in 1..G.Taille loop
 			R := AjouterChiffre(R,i,G.G(i,C));
 		end loop;
-
-		return R;
+	return R;
    end extraireColonne;
 
    ------------------
@@ -147,11 +121,10 @@ package body Grille is
       G2 : Type_Grille;
 
    begin
-
-      --if estCaseVide(G,C) then
-      --   raise VIDER_CASE_VIDE;
-      --end if;
-
+	--levee d'exceptions
+	if not estCaseVide(G,C) then
+		raise 
+	--fixation du chiffre
       G2 := G;
       G2.G(ObtenirLigne(C),ObtenirColonne(C)) := V;
       return G2;
