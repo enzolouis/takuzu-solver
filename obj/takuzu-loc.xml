@@ -1,149 +1,177 @@
 <?xml version="1.0"?>
 <Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 28" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 66" line=" 26" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 7" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 8" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 26" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 43" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\a_tester_Rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\a_tester_Rangee.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 92" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 121" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 92" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\tests_tad_pile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\tests_tad_pile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 119" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\tests_tad_pile.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 6" line=" 6" >
+      <vfs_project>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file>C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\tests_tad_pile.adb</vfs_file>
+    </file_marker>
+  </Project>
   <Project >
-    <file_marker column=" 12" line=" 127" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\Tests_TAD\a_tester_Grille.adb</vfs_file>
+    <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 11" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\affichage.adb</vfs_file>
+    <file_marker column=" 17" line=" 28">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 6" >
-      <vfs_project />
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_file>
+    <file_marker column=" 66" line=" 26">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 86" line=" 15" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\resolution_takuzu.ads</vfs_file>
+    <file_marker column=" 16" line=" 7">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 13" line=" 34" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\rangee.ads</vfs_file>
+    <file_marker column=" 16" line=" 8">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 39" line=" 31" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\chiffre.ads</vfs_file>
+    <file_marker column=" 37" line=" 26">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 33" line=" 34" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\grille.ads</vfs_file>
+    <file_marker column=" 7" line=" 43">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 13" line=" 6" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\coordonnee.ads</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\a_tester_Rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 13" line=" 72" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\grille.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\tests\Tests_TAD\a_tester_Rangee.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 56" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\rangee.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\chiffre.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\rangee.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 1" line=" 92">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 19" line=" 121">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 28" line=" 92">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\corps\rangee.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\tests_resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 96" line=" 175" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 225" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\tests_resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\specifications\resolution_takuzu.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\tests_resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\tests_resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 24" line=" 197" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 18" line=" 203" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\tests\tests_resolution\tests_resolution_takuzu.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\takuzu.gpr</vfs_project>
-      <vfs_file>C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\Takuzu\src\corps\resolution_takuzu.adb</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\takuzu.gpr</vfs_project>
+      <vfs_file >C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\src\specifications\tad_pile.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
