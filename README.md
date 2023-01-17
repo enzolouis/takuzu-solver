@@ -41,3 +41,5 @@ Première méthode naïve : Utilisation de 4 règles simple, dérivées et tradu
 	Règle D : La grille ne peut posséder 2 mêmes lignes ou 2 mêmes colonnes
 
 Avec ces 4 règles, on peut résoudre 4 grilles entièrement sur les 8 (voir dossier grilles).
+
+test
