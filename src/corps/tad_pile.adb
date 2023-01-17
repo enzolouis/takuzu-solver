@@ -1,8 +1,13 @@
 package body TAD_Pile is
 
+   --------------------
+   -- construirePile --
+   --------------------
+
    function construirePile return Type_Pile is
       p : Type_Pile;
    begin
+      p.nb_elements := 0;
       return p;
    end construirePile;
 
@@ -12,8 +17,7 @@ package body TAD_Pile is
 
    function estVide (pile : in Type_Pile) return Boolean is
    begin
-      pragma Compile_Time_Warning (Standard.True, "estVide unimplemented");
-      return raise Program_Error with "Unimplemented function estVide";
+      return p.nb_elements = 0;
    end estVide;
 
    -------------
@@ -22,8 +26,12 @@ package body TAD_Pile is
 
    function dernier (pile : in Type_Pile) return T is
    begin
-      pragma Compile_Time_Warning (Standard.True, "dernier unimplemented");
-      return raise Program_Error with "Unimplemented function dernier";
+      --levee d'exceptions
+      if estVide(pile) then
+         raise PILE_VIDE;
+      end if;
+      --corps du sous-programme
+      return pile.elements(pile.nb_elements);
    end dernier;
 
    -------------
@@ -31,9 +39,17 @@ package body TAD_Pile is
    -------------
 
    function empiler (pile : in Type_Pile; e : in T) return Type_Pile is
+      p1 : Type_Pile;
    begin
-      pragma Compile_Time_Warning (Standard.True, "empiler unimplemented");
-      return raise Program_Error with "Unimplemented function empiler";
+      --levee d'exceptions
+      if pile.nb_elements = TAILLE_MAX then
+         raise PILE_PLEINE;
+      end if;
+      --corps du sous-programme
+      p1 := pile;
+      p1.nb_elements := p1.nb_elements + 1;
+      p1.elements(p1.nb_elements) := e;
+      return p1;
    end empiler;
 
    -------------
@@ -41,9 +57,16 @@ package body TAD_Pile is
    -------------
 
    function depiler (pile : in Type_Pile) return Type_Pile is
+      p1 : Type_Pile;
    begin
-      pragma Compile_Time_Warning (Standard.True, "depiler unimplemented");
-      return raise Program_Error with "Unimplemented function depiler";
+      --levee d'exceptions
+      if pile.nb_elements = 0 then
+         raise PILE_VIDE;
+      end if;
+      --corps du sous-programme
+      p1 := pile;
+      p1.elements(p1.nb_elements) := 0;
+      p1.nb_elements := p1.nb_elements - 1;
    end depiler;
 
 end TAD_Pile;
