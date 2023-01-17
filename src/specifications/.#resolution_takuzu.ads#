@@ -2,6 +2,7 @@ with Grille;     use Grille;
 with Coordonnee; use Coordonnee;
 with Chiffre;    use Chiffre;
 with Rangee;     use Rangee;
+with Pile_TCC; use Pile_TCC;
 
 package Resolution_Takuzu is
 

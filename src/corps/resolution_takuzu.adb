@@ -6,6 +6,8 @@ with Chiffre; use Chiffre;
 with Coordonnee; use Coordonnee;
 with Affichage; use Affichage;
 
+with Pile_TCC;use Pile_TCC;
+
 package body Resolution_Takuzu is
     procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : in out Boolean) is
         rangee:Type_rangee;
@@ -170,66 +172,7 @@ package body Resolution_Takuzu is
         return True;
     end RegleDColonne;
    
-    procedure ResoudreTakuzu (G : in out Type_Grille; trouve : out Boolean) is
-        n:Integer;
-        rangee_courante:Type_Rangee;
-        maj:Boolean;
-    begin
-        trouve := false;
-        n := Taille(G);
-        maj := True;
-        while not EstRemplie(G) and maj loop
-		  maj := false;
-            for x in 1..n loop
-				rangee_courante := extraireLigne(G, x);
-				if nombreChiffresConnus(rangee_courante) /= n then
-					RegleADoublonLigne(G, x, maj);
-					RegleBLigne(G, x, maj);
-				
-					if nombreChiffresDeValeur(rangee_courante, UN) = n / 2 then
-						RegleCCompleterLigne(G, x, ZERO);
-						Maj := True;
-					elsif nombreChiffresDeValeur(rangee_courante, ZERO) = n / 2 then
-				
-						RegleCCompleterLigne(G, x, UN);
-						Maj := True;
-					end if;
-				end if;
-            end loop;
-            
-            for x in 1..n loop
-				  rangee_courante := extraireColonne(G, x);
-				  if nombreChiffresConnus(rangee_courante) /= n then
-					RegleADoublonColonne(G, x, maj);
-					RegleBColonne(G, x, maj);
-                
-					if nombreChiffresDeValeur(rangee_courante, UN) = n / 2 then
-						RegleCCompleterColonne(G, x, ZERO);
-						Maj := True;
-					elsif nombreChiffresDeValeur(rangee_courante, ZERO) = n / 2 then
-					 
-						RegleCCompleterColonne(G, x, UN);
-						Maj := True;
-					end if;
-				  end if;
-            end loop;
-				
-        end loop;
-        
-        if EstRemplie(G) then
-            trouve := true;
-        end if;
-
-        -- regle D
-        
-        if not RegleDColonne(G) or not RegleDLigne(G) then
-            trouve := false;
-        end if;
-        
-        AfficherGrille(G);
-		  
-		  
-    end ResoudreTakuzu;
+    
 	 
 	 function is_valid_ligne(g: in Type_Grille; L: Integer; n : in Integer) return Boolean is
 	     rangee:Type_rangee;
@@ -292,5 +235,25 @@ package body Resolution_Takuzu is
         return True;
     end Is_Valid;
 	 
+	
+	 
+	 
+	 procedure ResoudreTakuzu (G : in out Type_Grille, trouve : out Boolean; P : in out Type_Pile) return Boolean is
+          Coo:Type_Coordonnee;
+			 
+    begin
+
+		while not EstRemplie(G) and Is_Valid(G) loop
+			if estCaseVide(G, C) then
+			empile();
+			G := FixerChiffre(G, C, ZERO)
+		end loop;
+		
+		if not EstRemplie(G) then
+			depiler();
+			ResoudreTakuzu(G);
+		end if;
+        
+	end ResoudreTakuzu;
 
 end Resolution_Takuzu;
