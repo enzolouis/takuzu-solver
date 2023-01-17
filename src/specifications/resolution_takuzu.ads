@@ -30,7 +30,12 @@ package Resolution_Takuzu is
 
 	function RegleDColonne (G : in Type_Grille) return Boolean;
 
-
    procedure ResoudreTakuzu (G : in out Type_Grille; trouve : out Boolean);
+
+	function is_valid_ligne(g: in Type_Grille; L: Integer; n : in Integer) return Boolean;
+
+	function is_valid_colonne(g: in Type_Grille; Col: Integer; n : in Integer) return Boolean;
+
+	function is_valid(g: in Type_Grille) return Boolean;
 
 end Resolution_Takuzu;
