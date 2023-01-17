@@ -328,7 +328,7 @@ package ada_main is
    pragma Export (C, u00143, "coordonneeB");
    u00144 : constant Version_32 := 16#b1b28967#;
    pragma Export (C, u00144, "coordonneeS");
-   u00145 : constant Version_32 := 16#cbf8c4df#;
+   u00145 : constant Version_32 := 16#c4e43878#;
    pragma Export (C, u00145, "grilleB");
    u00146 : constant Version_32 := 16#1710eb5c#;
    pragma Export (C, u00146, "grilleS");

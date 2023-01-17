@@ -6,11 +6,8 @@ package body Chiffre is
    -------------------
 
    function ValeurChiffre (C : in Type_Chiffre) return Integer is
-
    begin
-
       return Integer(C);
-
    end ValeurChiffre;
 
    -----------------
@@ -18,11 +15,8 @@ package body Chiffre is
    -----------------
 
    function EstInconnue (C : in Type_Chiffre) return Boolean is
-
    begin
-
       return Integer(C) = -1;
-
    end EstInconnue;
 
    ----------------
@@ -30,13 +24,12 @@ package body Chiffre is
    ----------------
 
    function Complement (C : in Type_Chiffre) return Type_Chiffre is
-
    begin
-
+      --levee d'exceptions
       if EstInconnue(C) then
          raise VALEUR_INCONNUE;
       end if;
-
+      --corps du sous programme 
       if Integer(C) = 0 then
          return UN;
       elsif Integer(C) = 1 then
@@ -44,19 +37,15 @@ package body Chiffre is
       else
          return INCONNU;
       end if;
-
    end Complement;
 
    ---------
    -- "=" --
    ---------
-
+   
    function "=" (c1 : in Type_Chiffre; c2 : in Type_Chiffre) return Boolean is
-
    begin
-
       return Integer(c1) = Integer(c2);
-
    end "=";
 
 end Chiffre;
