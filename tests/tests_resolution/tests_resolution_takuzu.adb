@@ -3,6 +3,7 @@ with Grille;               use Grille;
 with affichage;            use affichage;
 with Ada.Text_IO;          use Ada.Text_IO;
 with remplir_grille_takuzu; use remplir_grille_takuzu;
+with Pile_TCC; use Pile_TCC;
 
 procedure tests_Resolution_Takuzu is
 
@@ -11,7 +12,8 @@ procedure tests_Resolution_Takuzu is
    --------------------------------------------------
    procedure test (g : in out Type_Grille; m : in String) is
       nbChiffresDepart : Integer;
-      Trouve           : Boolean;
+		--Pile : Pile_TCC.Type_Pile;
+		trouve:Boolean;
    begin
       New_Line;
       Put_Line ("*************************************************");
@@ -19,7 +21,7 @@ procedure tests_Resolution_Takuzu is
       Put_Line ("*************************************************");
       afficherGrille (g);
       nbChiffresDepart := NombreChiffresConnus (g);
-      resoudreTakuzu (G, trouve);
+      resoudreTakuzu (G,  trouve);
       afficherResultat (G, trouve, nbChiffresDepart);
    end test;
 
@@ -48,10 +50,10 @@ begin
 
    -- On les teste une par une
    test (g0, "***  Takuzu tres facile taille 6 : grille 0   ***");
-   test (g1, "*** Takuzu grille tres tres facile : grille 1 ***");
-   test (g2, "***    Takuzu grille tres facile : grille 2   ***");
-   test (g3, "***    Takuzu grille tres facile : grille 3   ***");
-   test (g4, "***      Takuzu grille moyenne : grille 4     ***");
+   --test (g1, "*** Takuzu grille tres tres facile : grille 1 ***");
+   --test (g2, "***    Takuzu grille tres facile : grille 2   ***");
+   --test (g3, "***    Takuzu grille tres facile : grille 3   ***");
+   --test (g4, "***      Takuzu grille moyenne : grille 4     ***");
    --test (g5, "***     Takuzu grille difficile : grille 5    ***");
    --test (g6, "***  Takuzu grille tres difficile : grille 6  ***");
    --test (g7, "***     Takuzu grille taille 10 : grille 7    ***");

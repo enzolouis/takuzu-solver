@@ -2,9 +2,10 @@ with Grille;     use Grille;
 with Coordonnee; use Coordonnee;
 with Chiffre;    use Chiffre;
 with Rangee;     use Rangee;
+with Pile_TCC;   use Pile_TCC;
+with Coord_Chiffres; use Coord_Chiffres;
 
 package Resolution_Takuzu is
-
 
    procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : in out Boolean);
 
@@ -30,7 +31,19 @@ package Resolution_Takuzu is
 
 	function RegleDColonne (G : in Type_Grille) return Boolean;
 
+	function is_valid_ligne(g: in Type_Grille; L: Integer; n : in Integer) return Boolean;
 
-   procedure ResoudreTakuzu (G : in out Type_Grille; trouve : out Boolean);
+	function is_valid_colonne(g: in Type_Grille; Col: Integer; n : in Integer) return Boolean;
+
+
+
+	function Is_Valid(G:in Type_Grille) return Boolean;
+
+	function Depiler_V2 (Pile : in Type_Pile) return Type_Pile;
+
+   procedure ResoudreTakuzu (g : in out Type_Grille; trouve: out Boolean);
+
+
+
 
 end Resolution_Takuzu;

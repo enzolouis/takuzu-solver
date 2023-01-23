@@ -1,0 +1,23 @@
+Créer une pile vide;
+Se placer sur la première place de la grille;
+Tant que la grille n'est pas remplie faire
+    Si la case est vide faire
+        empiler(coordonnées(case courante),1);
+        empiler(coordonnées(case courante),0);
+        Si fixerChiffre(grille , coordonnées(case(courante)) , 0)) est valide faire
+            empiler(coordonnées(case courante),1);
+            empiler(coordonnées(case courante),0);
+            fixerChiffre(grille , coordonnées(case(courante)) , 0));
+        sinon si fixerChiffre(grille , coordonnées(case(courante)) , 1));
+            dépiler();                -- on retire le 0 en haut de la pile
+            empiler(coordonnées(case courante),1);
+            empiler(coordonnées(case courante),0);
+            fixerChiffre(grille , coordonnées(case(courante)) , 1));
+        sinon
+            dépiler();
+            dépiler();
+            dépiler();
+        Fin si;
+    Fin Si;
+    Passer à la case suivante;
+Fin Tant que;

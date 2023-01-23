@@ -2,14 +2,17 @@
 b__tests_resolution_takuzu.o
 [PROJECT FILES]
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\takuzu.gpr
-20230106231538 2866a4370de5d21cac189d6c1dd65ad1
+20230117075758 4da8296f33902eb5cd8575be179af910
 [BOUND OBJECT FILES]
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\chiffre.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coordonnee.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coord_chiffres.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\rangee.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\grille.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\affichage.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\remplir_grille_takuzu.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tad_pile.o
+C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\pile_tcc.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\resolution_takuzu.o
 C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tests_resolution_takuzu.o
 [GENERATED SOURCE FILES]

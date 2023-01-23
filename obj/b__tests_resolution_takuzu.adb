@@ -30,15 +30,17 @@ package body ada_main is
    E119 : Short_Integer; pragma Import (Ada, E119, "system__finalization_root_E");
    E117 : Short_Integer; pragma Import (Ada, E117, "ada__finalization_E");
    E116 : Short_Integer; pragma Import (Ada, E116, "system__file_io_E");
-   E150 : Short_Integer; pragma Import (Ada, E150, "ada__strings__unbounded_E");
+   E155 : Short_Integer; pragma Import (Ada, E155, "ada__strings__unbounded_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "ada__text_io_E");
    E140 : Short_Integer; pragma Import (Ada, E140, "chiffre_E");
    E142 : Short_Integer; pragma Import (Ada, E142, "coordonnee_E");
    E146 : Short_Integer; pragma Import (Ada, E146, "rangee_E");
    E144 : Short_Integer; pragma Import (Ada, E144, "grille_E");
    E122 : Short_Integer; pragma Import (Ada, E122, "affichage_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "remplir_grille_takuzu_E");
-   E171 : Short_Integer; pragma Import (Ada, E171, "resolution_takuzu_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "remplir_grille_takuzu_E");
+   E151 : Short_Integer; pragma Import (Ada, E151, "tad_pile_E");
+   E148 : Short_Integer; pragma Import (Ada, E148, "pile_tcc_E");
+   E176 : Short_Integer; pragma Import (Ada, E176, "resolution_takuzu_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -56,7 +58,7 @@ package body ada_main is
       begin
          F1;
       end;
-      E150 := E150 - 1;
+      E155 := E155 - 1;
       declare
          procedure F2;
          pragma Import (Ada, F2, "ada__strings__unbounded__finalize_spec");
@@ -222,7 +224,7 @@ package body ada_main is
       E116 := E116 + 1;
       Ada.Strings.Unbounded'Elab_Spec;
       Ada.Strings.Unbounded'Elab_Body;
-      E150 := E150 + 1;
+      E155 := E155 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E106 := E106 + 1;
@@ -235,8 +237,11 @@ package body ada_main is
       E144 := E144 + 1;
       E122 := E122 + 1;
       Remplir_Grille_Takuzu'Elab_Spec;
+      E153 := E153 + 1;
+      E151 := E151 + 1;
+      Pile_Tcc'Elab_Spec;
       E148 := E148 + 1;
-      E171 := E171 + 1;
+      E176 := E176 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -276,10 +281,13 @@ package body ada_main is
 --  BEGIN Object file/option list
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\chiffre.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coordonnee.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coord_chiffres.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\rangee.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\grille.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\affichage.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\remplir_grille_takuzu.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tad_pile.o
+   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\pile_tcc.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\resolution_takuzu.o
    --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tests_resolution_takuzu.o
    --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\

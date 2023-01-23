@@ -54,7 +54,7 @@ package Grille is
 
    -- construit une nouvelle grille dont les valeurs sont celles de g
    -- SAUF la case de coordonnées c qui prend la valeur INCONNU
-   -- nécessite que la case c de la grille g ne soit pas vide
+   -- necessite que la case c de la grille g ne soit pas vide
    -- leve l'exception VIDER_CASE_VIDE si c est vide
    function ViderCase
      (G : in Type_Grille; C : in Type_Coordonnee) return Type_Grille;
