@@ -2,11 +2,7 @@ project Takuzu is
 
    for Source_Dirs use ("src/**", "tests/**");
    for Object_Dir use "obj";
-<<<<<<< HEAD
    for Main use ("run_tests_chiffre.adb", "run_tests_Coordonnees.adb", "run_tests_Grille.adb", "run_tests_rangee.adb", "tests_resolution_takuzu.adb");
-=======
-   for Main use ("run_tests_tad_pile.adb", "run_tests_chiffre.adb", "run_tests_Coordonnees.adb", "run_tests_Grille.adb", "run_tests_Grille.adb", "run_tests_rangee.adb", "tests_resolution_takuzu.adb");
->>>>>>> ac62ca94ca7d3385bb1768a14c8c01d111b1215e
 
 end Takuzu;
 
