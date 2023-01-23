@@ -48,6 +48,8 @@ begin
    g7 := Lire_Grille("g7.txt");
    g8 := Lire_Grille("g8.txt");
 
+
+	-- test is_valid vite fait
 	--if is_valid(g0) and is_valid(g1) and is_valid(g2) and is_valid(g3) and is_valid(g4) then
 	--	put("test");
 	--end if;

@@ -14,8 +14,8 @@ package Coordonnee is
 
 private
    type Type_Coordonnee is record
-      Ligne   : Integer; -- ligne d'une coordonnée
-      Colonne : Integer; -- colonne d'une coordonnée
+      Ligne   : Integer; -- ligne d'une coordonnee
+      Colonne : Integer; -- colonne d'une coordonnee
    end record;
 
 end Coordonnee;

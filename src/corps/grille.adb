@@ -17,7 +17,7 @@ package body Grille is
 		for l in 1 .. T loop
 			for c in 1 .. T loop
 				grille.G(l,c) := INCONNU;
-			end loop;	
+			end loop;
 		end loop;
 		return grille;
 	end ConstruireGrille;

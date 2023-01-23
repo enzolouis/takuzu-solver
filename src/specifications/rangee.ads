@@ -21,7 +21,7 @@ package Rangee is
    -- retourne la taille de la rangee r
    function Taille (R : in Type_Rangee) return Integer;
 
-   -- retourne le chiffre place a l'indice i de la rangee r
+   -- retourne le chiffre place a� l'indice i de la rangee r
    -- necessite 0 < i <= taille(r)
    -- leve l'exception TRANCHE_INVALIDE si i < 1 ou taille(r) < i
    function ObtenirChiffre
@@ -34,26 +34,26 @@ package Rangee is
    function nombreChiffresDeValeur
      (R : in Type_Rangee; V : in Type_Chiffre) return Integer;
 
-   -- retourne le chiffre de droite de coordonnée c de la Rangee r
+   -- retourne le chiffre de droite de coordonnee c de la Rangee r
    -- necessite 0 < i <= taille(r)
    -- leve l'exception TRANCHE_INVALIDE si i < 1 ou i >= taille(r)
    function chiffreDeDroite
      (R : in Type_Rangee; I : in Integer) return Type_Chiffre;
 
-   -- retourne le chiffre de gauche de coordonnée c de la Rangee r
+   -- retourne le chiffre de gauche de coordonnee c de la Rangee r
    -- necessite 0 < i <= taille(r)
    -- leve l'exception TRANCHE_INVALIDE si i < 1 ou i > taille(r)
    function chiffreDeGauche
      (R : in Type_Rangee; I : in Integer) return Type_Chiffre;
 
-   -- retourne VRAI si les chiffre de droite de coordonnée c
-   -- de la Rangee r sont égaux et FAUX sinon
+   -- retourne VRAI si les chiffre de droite de coordonnee c
+   -- de la Rangee r sont egaux et FAUX sinon
    -- necessite 0 < i <= taille(r)
    -- leve l'exception TRANCHE_INVALIDE si i < 1 ou i > taille(r)
   function SontDeuxChiffresDeDroiteEgaux (R : in Type_Rangee; I : in Integer) return Boolean;
 
-   -- retourne VRAI si les chiffre de gauche de coordonnée c
-   -- de la Rangee r sont égaux et FAUX sinon
+   -- retourne VRAI si les chiffre de gauche de coordonnee c
+   -- de la Rangee r sont egaux et FAUX sinon
    -- necessite 0 < i <= taille(r)
    -- leve l'exception TRANCHE_INVALIDE si i < 1 ou i > taille(r)
    function SontDeuxChiffresDeGaucheEgaux (R : in Type_Rangee; I : in Integer) return Boolean;
