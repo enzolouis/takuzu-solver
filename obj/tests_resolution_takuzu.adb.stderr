@@ -1,2 +1,0 @@
-tests_resolution_takuzu.adb:22:07: error: missing argument for parameter "Colonne" in call to "resoudretakuzu" declared at resolution_takuzu.ads:41
-resolution_takuzu.ads:41:106: error: missing ";"
