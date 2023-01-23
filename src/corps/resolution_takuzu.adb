@@ -8,7 +8,10 @@ with Affichage;           use Affichage;
 with Pile_TCC;            use Pile_TCC;
 with Coord_Chiffres;      use Coord_Chiffres;
 
+with Pile_TCC;use Pile_TCC;
+
 package body Resolution_Takuzu is
+<<<<<<< HEAD
    procedure RegleADoublonLigne
      (g : in out Type_Grille; L : in Integer; maj : in out Boolean)
    is
@@ -126,6 +129,92 @@ package body Resolution_Takuzu is
                       (g, coord, Complement (ObtenirChiffre (rangee, i - 1)));
                   maj := True;
                end if;
+=======
+    procedure RegleADoublonLigne(g: in out Type_Grille; L:  in Integer; maj : in out Boolean) is
+        rangee:Type_rangee;
+        coord:Type_Coordonnee;
+    begin
+        rangee := extraireLigne(g,L);
+        for i in 1..Taille(g) loop
+            coord := ConstruireCoordonnees(L, i);
+            if estCaseVide(G, coord) then
+                --if i <= 2 then
+                --    if SontDeuxChiffresDeDroiteEgaux(rangee, i) and chiffreDeDroite(rangee, i) /= INCONNU then
+                --        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee, i+1)));
+                --        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(rangee, i+1)));
+                --        maj := True;
+                --    end if;
+                --elsif i > Taille(g)-2 then
+                --    if SontDeuxChiffresDeGaucheEgaux(rangee,i) and chiffreDeGauche(rangee, i) /= INCONNU then
+                --        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i-1)));
+                --        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I-1)));
+                --        maj := True;
+                --    end if;
+               -- else
+                    if SontDeuxChiffresDeDroiteEgaux(rangee,i) and chiffreDeDroite(rangee, i) /= INCONNU then
+                        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i+1)));
+                        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I+1)));
+                        maj := True;            
+                    elsif SontDeuxChiffresDeGaucheEgaux(rangee, i) and chiffreDeGauche(rangee, i) /= INCONNU then
+                        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i-1)));
+                        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I-1)));
+                        maj := True;
+                    end if;
+                end if;
+            --end if;
+        end loop;
+    end RegleADoublonLigne;
+
+    procedure RegleADoublonColonne(g: in out Type_Grille; Col:  in Integer; maj : in out Boolean) is
+        rangee:Type_rangee;
+        coord:Type_Coordonnee;
+    begin
+        rangee := extraireColonne(g,Col);
+        for i in 1..Taille(g) loop
+            coord := ConstruireCoordonnees(i,Col);
+            if estCaseVide(G,coord) then
+                --if i <= 2 then
+                --    if SontDeuxChiffresDeDroiteEgaux(rangee,i) and chiffreDeDroite(rangee, i) /= INCONNU then
+                --        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i+1)));
+                --        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I+1)));
+                --        maj := True;
+                --    end if;
+                --elsif i > Taille(g)-2 then
+                --    if SontDeuxChiffresDeGaucheEgaux(rangee,i) and chiffreDeGauche(rangee, i) /= INCONNU then
+                --        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i-1)));
+                --        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I-1)));
+                --        maj := True;
+                --    end if;
+                --else
+                    if SontDeuxChiffresDeDroiteEgaux(rangee,i) and chiffreDeDroite(rangee, i) /= INCONNU then
+                        rangee := AjouterChiffre(Rangee,I,Complement(ObtenirChiffre(Rangee,I+1)));
+                        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I+1)));
+                        maj := True;
+                    elsif SontDeuxChiffresDeGaucheEgaux(rangee,i) and chiffreDeGauche(rangee, i) /= INCONNU then
+                        rangee := AjouterChiffre(rangee,i,Complement(ObtenirChiffre(rangee,i-1)));
+                        g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,I-1)));
+                        maj := True;
+                    end if;
+                end if;
+            --end if;
+        end loop;
+    end RegleADoublonColonne;
+   
+    procedure RegleBLigne(G : in out Type_Grille; L : in Integer; maj : in out Boolean) is
+        rangee:Type_Rangee;
+        coord:Type_Coordonnee;
+    begin
+        rangee := extraireLigne(G, L);
+        for i in 2..Taille(G)-1 loop
+            coord := ConstruireCoordonnees(L, i);
+            if estCaseVide(G, coord) then
+                if chiffreDeDroite(rangee, i) = chiffreDeGauche(rangee, i) and chiffreDeGauche(rangee, i) /= INCONNU then -- ou chiffreDroite pareil
+                    rangee := AjouterChiffre(rangee, i, Complement(ObtenirChiffre(rangee, i+1))); -- ou i-1
+                    g := FixerChiffre(G,Coord,Complement(ObtenirChiffre(Rangee,i+1)));
+                    maj := True;
+					  
+                end if;
+>>>>>>> ac62ca94ca7d3385bb1768a14c8c01d111b1215e
             end if;
          end if;
       end loop;
@@ -237,6 +326,7 @@ package body Resolution_Takuzu is
       end loop;
       return True;
    end RegleDLigne;
+<<<<<<< HEAD
 
    function RegleDColonne (G : in Type_Grille) return Boolean is
    begin
@@ -412,5 +502,105 @@ package body Resolution_Takuzu is
       end loop;
       AfficherGrille(g);
    end ResoudreTakuzu;
+=======
+   
+    function RegleDColonne (G : in Type_Grille) return Boolean is
+    begin
+        for x in 1..Taille(G) loop
+            for y in x..Taille(G) loop
+                if x /= y then
+                    if extraireColonne(G, x) = extraireColonne(G, y) then
+                        return False;
+                    end if;
+                end if;
+            end loop;
+        end loop;
+        return True;
+    end RegleDColonne;
+   
+    
+	 
+	 function is_valid_ligne(g: in Type_Grille; L: Integer; n : in Integer) return Boolean is
+	     rangee:Type_rangee;
+        coord:Type_Coordonnee;
+    begin
+        rangee := extraireLigne(g,L);
+        for i in 1..Taille(g) loop
+            coord := ConstruireCoordonnees(L, i);				  
+                if SontDeuxChiffresDeDroiteEgaux(rangee,i) and ObtenirChiffre(rangee, i) = chiffreDeDroite(rangee, i) and not EstInconnue(ObtenirChiffre(rangee, i)) then
+                    return false;
+                elsif SontDeuxChiffresDeGaucheEgaux(rangee,i) and ObtenirChiffre(rangee, i) = chiffreDeGauche(rangee, i) and not EstInconnue(ObtenirChiffre(rangee, i)) then
+                    return false;
+                end if;
+            
+			 
+			 if nombreChiffresDeValeur(rangee, UN) > n / 2 or nombreChiffresDeValeur(rangee, ZERO) > n / 2 then
+				return false;
+			 end if;
+        end loop;
+		  
+		  return true;
+    end is_valid_ligne;
+	 
+	 function is_valid_colonne(g: in Type_Grille; Col: Integer; n : in Integer) return Boolean is
+	     rangee:Type_rangee;
+        coord:Type_Coordonnee;
+    begin
+        rangee := extraireColonne(g,Col);
+        for i in 1..Taille(g) loop
+            coord := ConstruireCoordonnees(i, Col);
+                if SontDeuxChiffresDeDroiteEgaux(rangee,i) and ObtenirChiffre(rangee, i) = chiffreDeDroite(rangee, i) and not EstInconnue(ObtenirChiffre(rangee, i)) then
+                    return false;
+                elsif SontDeuxChiffresDeGaucheEgaux(rangee,i) and ObtenirChiffre(rangee, i) = chiffreDeGauche(rangee, i) and not EstInconnue(ObtenirChiffre(rangee, i)) then
+                    return false;
+                end if;
+			 
+			 if nombreChiffresDeValeur(rangee, UN) > n / 2 or nombreChiffresDeValeur(rangee, ZERO) > n / 2 then
+				return false;
+			 end if;
+        end loop;
+		  
+		  return true;
+    end is_valid_colonne;
+	 
+	 function Is_Valid(G:in Type_Grille) return Boolean is
+          N:Integer:=Taille(G);
+    begin
+          for X in 1..N loop
+                if not Is_Valid_Ligne(G,X,N) then
+                    Put("NON VALIDE");
+                    return False;
+				  end if;
+         end loop;
+            for Y in 1..N loop
+                if not Is_Valid_Colonne(G,Y,N) then
+                    Put("Non valide colonne");
+                    return False;
+				   end if;
+        end loop;
+        return True;
+    end Is_Valid;
+	 
+	
+	 
+	 
+	 procedure ResoudreTakuzu (G : in out Type_Grille, trouve : out Boolean; P : in out Type_Pile) return Boolean is
+          Coo:Type_Coordonnee;
+			 
+    begin
+
+		while not EstRemplie(G) and Is_Valid(G) loop
+			if estCaseVide(G, C) then
+			empile();
+			G := FixerChiffre(G, C, ZERO)
+		end loop;
+		
+		if not EstRemplie(G) then
+			depiler();
+			ResoudreTakuzu(G);
+		end if;
+        
+	end ResoudreTakuzu;
+>>>>>>> ac62ca94ca7d3385bb1768a14c8c01d111b1215e
 
 end Resolution_Takuzu;

@@ -1,46 +1,41 @@
 pragma Warnings (Off);
 pragma Ada_95;
-pragma Source_File_Name (ada_main, Spec_File_Name => "b__tests_resolution_takuzu.ads");
-pragma Source_File_Name (ada_main, Body_File_Name => "b__tests_resolution_takuzu.adb");
+pragma Source_File_Name (ada_main, Spec_File_Name => "b__run_tests_coordonnees.ads");
+pragma Source_File_Name (ada_main, Body_File_Name => "b__run_tests_coordonnees.adb");
 pragma Suppress (Overflow_Check);
 with Ada.Exceptions;
 
 package body ada_main is
 
-   E065 : Short_Integer; pragma Import (Ada, E065, "system__os_lib_E");
-   E016 : Short_Integer; pragma Import (Ada, E016, "ada__exceptions_E");
-   E012 : Short_Integer; pragma Import (Ada, E012, "system__soft_links_E");
-   E010 : Short_Integer; pragma Import (Ada, E010, "system__exception_table_E");
-   E033 : Short_Integer; pragma Import (Ada, E033, "ada__containers_E");
-   E061 : Short_Integer; pragma Import (Ada, E061, "ada__io_exceptions_E");
-   E007 : Short_Integer; pragma Import (Ada, E007, "ada__strings_E");
-   E048 : Short_Integer; pragma Import (Ada, E048, "ada__strings__maps_E");
-   E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings__maps__constants_E");
-   E071 : Short_Integer; pragma Import (Ada, E071, "interfaces__c_E");
-   E019 : Short_Integer; pragma Import (Ada, E019, "system__exceptions_E");
-   E073 : Short_Integer; pragma Import (Ada, E073, "system__object_reader_E");
-   E042 : Short_Integer; pragma Import (Ada, E042, "system__dwarf_lines_E");
-   E090 : Short_Integer; pragma Import (Ada, E090, "system__soft_links__initialize_E");
-   E032 : Short_Integer; pragma Import (Ada, E032, "system__traceback__symbolic_E");
-   E094 : Short_Integer; pragma Import (Ada, E094, "ada__strings__utf_encoding_E");
-   E100 : Short_Integer; pragma Import (Ada, E100, "ada__tags_E");
-   E006 : Short_Integer; pragma Import (Ada, E006, "ada__strings__text_buffers_E");
-   E108 : Short_Integer; pragma Import (Ada, E108, "ada__streams_E");
-   E120 : Short_Integer; pragma Import (Ada, E120, "system__file_control_block_E");
-   E119 : Short_Integer; pragma Import (Ada, E119, "system__finalization_root_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "ada__finalization_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "system__file_io_E");
-   E155 : Short_Integer; pragma Import (Ada, E155, "ada__strings__unbounded_E");
-   E106 : Short_Integer; pragma Import (Ada, E106, "ada__text_io_E");
-   E140 : Short_Integer; pragma Import (Ada, E140, "chiffre_E");
-   E142 : Short_Integer; pragma Import (Ada, E142, "coordonnee_E");
-   E146 : Short_Integer; pragma Import (Ada, E146, "rangee_E");
-   E144 : Short_Integer; pragma Import (Ada, E144, "grille_E");
-   E122 : Short_Integer; pragma Import (Ada, E122, "affichage_E");
-   E153 : Short_Integer; pragma Import (Ada, E153, "remplir_grille_takuzu_E");
-   E151 : Short_Integer; pragma Import (Ada, E151, "tad_pile_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "pile_tcc_E");
-   E176 : Short_Integer; pragma Import (Ada, E176, "resolution_takuzu_E");
+   E067 : Short_Integer; pragma Import (Ada, E067, "system__os_lib_E");
+   E018 : Short_Integer; pragma Import (Ada, E018, "ada__exceptions_E");
+   E014 : Short_Integer; pragma Import (Ada, E014, "system__soft_links_E");
+   E012 : Short_Integer; pragma Import (Ada, E012, "system__exception_table_E");
+   E035 : Short_Integer; pragma Import (Ada, E035, "ada__containers_E");
+   E063 : Short_Integer; pragma Import (Ada, E063, "ada__io_exceptions_E");
+   E009 : Short_Integer; pragma Import (Ada, E009, "ada__strings_E");
+   E050 : Short_Integer; pragma Import (Ada, E050, "ada__strings__maps_E");
+   E054 : Short_Integer; pragma Import (Ada, E054, "ada__strings__maps__constants_E");
+   E073 : Short_Integer; pragma Import (Ada, E073, "interfaces__c_E");
+   E021 : Short_Integer; pragma Import (Ada, E021, "system__exceptions_E");
+   E075 : Short_Integer; pragma Import (Ada, E075, "system__object_reader_E");
+   E044 : Short_Integer; pragma Import (Ada, E044, "system__dwarf_lines_E");
+   E092 : Short_Integer; pragma Import (Ada, E092, "system__soft_links__initialize_E");
+   E034 : Short_Integer; pragma Import (Ada, E034, "system__traceback__symbolic_E");
+   E096 : Short_Integer; pragma Import (Ada, E096, "ada__strings__utf_encoding_E");
+   E102 : Short_Integer; pragma Import (Ada, E102, "ada__tags_E");
+   E007 : Short_Integer; pragma Import (Ada, E007, "ada__strings__text_buffers_E");
+   E121 : Short_Integer; pragma Import (Ada, E121, "ada__streams_E");
+   E148 : Short_Integer; pragma Import (Ada, E148, "system__file_control_block_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "system__finalization_root_E");
+   E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
+   E147 : Short_Integer; pragma Import (Ada, E147, "system__file_io_E");
+   E138 : Short_Integer; pragma Import (Ada, E138, "system__storage_pools_E");
+   E136 : Short_Integer; pragma Import (Ada, E136, "system__finalization_masters_E");
+   E108 : Short_Integer; pragma Import (Ada, E108, "ada__strings__unbounded_E");
+   E143 : Short_Integer; pragma Import (Ada, E143, "ada__text_io_E");
+   E134 : Short_Integer; pragma Import (Ada, E134, "coordonnee_E");
+   E005 : Short_Integer; pragma Import (Ada, E005, "a_tester_coordonnees_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -51,26 +46,33 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E106 := E106 - 1;
+      E143 := E143 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
       begin
          F1;
       end;
-      E155 := E155 - 1;
+      E108 := E108 - 1;
       declare
          procedure F2;
          pragma Import (Ada, F2, "ada__strings__unbounded__finalize_spec");
       begin
          F2;
       end;
+      E136 := E136 - 1;
       declare
          procedure F3;
-         pragma Import (Ada, F3, "system__file_io__finalize_body");
+         pragma Import (Ada, F3, "system__finalization_masters__finalize_spec");
       begin
-         E116 := E116 - 1;
          F3;
+      end;
+      declare
+         procedure F4;
+         pragma Import (Ada, F4, "system__file_io__finalize_body");
+      begin
+         E147 := E147 - 1;
+         F4;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -176,76 +178,70 @@ package body ada_main is
       Ada.Exceptions'Elab_Spec;
       System.Soft_Links'Elab_Spec;
       System.Exception_Table'Elab_Body;
-      E010 := E010 + 1;
-      Ada.Containers'Elab_Spec;
-      E033 := E033 + 1;
-      Ada.Io_Exceptions'Elab_Spec;
-      E061 := E061 + 1;
-      Ada.Strings'Elab_Spec;
-      E007 := E007 + 1;
-      Ada.Strings.Maps'Elab_Spec;
-      E048 := E048 + 1;
-      Ada.Strings.Maps.Constants'Elab_Spec;
-      E052 := E052 + 1;
-      Interfaces.C'Elab_Spec;
-      E071 := E071 + 1;
-      System.Exceptions'Elab_Spec;
-      E019 := E019 + 1;
-      System.Object_Reader'Elab_Spec;
-      E073 := E073 + 1;
-      System.Dwarf_Lines'Elab_Spec;
-      E042 := E042 + 1;
-      System.Os_Lib'Elab_Body;
-      E065 := E065 + 1;
-      System.Soft_Links.Initialize'Elab_Body;
-      E090 := E090 + 1;
       E012 := E012 + 1;
+      Ada.Containers'Elab_Spec;
+      E035 := E035 + 1;
+      Ada.Io_Exceptions'Elab_Spec;
+      E063 := E063 + 1;
+      Ada.Strings'Elab_Spec;
+      E009 := E009 + 1;
+      Ada.Strings.Maps'Elab_Spec;
+      E050 := E050 + 1;
+      Ada.Strings.Maps.Constants'Elab_Spec;
+      E054 := E054 + 1;
+      Interfaces.C'Elab_Spec;
+      E073 := E073 + 1;
+      System.Exceptions'Elab_Spec;
+      E021 := E021 + 1;
+      System.Object_Reader'Elab_Spec;
+      E075 := E075 + 1;
+      System.Dwarf_Lines'Elab_Spec;
+      E044 := E044 + 1;
+      System.Os_Lib'Elab_Body;
+      E067 := E067 + 1;
+      System.Soft_Links.Initialize'Elab_Body;
+      E092 := E092 + 1;
+      E014 := E014 + 1;
       System.Traceback.Symbolic'Elab_Body;
-      E032 := E032 + 1;
-      E016 := E016 + 1;
+      E034 := E034 + 1;
+      E018 := E018 + 1;
       Ada.Strings.Utf_Encoding'Elab_Spec;
-      E094 := E094 + 1;
+      E096 := E096 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E100 := E100 + 1;
+      E102 := E102 + 1;
       Ada.Strings.Text_Buffers'Elab_Spec;
       Ada.Strings.Text_Buffers'Elab_Body;
-      E006 := E006 + 1;
+      E007 := E007 + 1;
       Ada.Streams'Elab_Spec;
-      E108 := E108 + 1;
+      E121 := E121 + 1;
       System.File_Control_Block'Elab_Spec;
-      E120 := E120 + 1;
+      E148 := E148 + 1;
       System.Finalization_Root'Elab_Spec;
       System.Finalization_Root'Elab_Body;
-      E119 := E119 + 1;
+      E123 := E123 + 1;
       Ada.Finalization'Elab_Spec;
-      E117 := E117 + 1;
+      E119 := E119 + 1;
       System.File_Io'Elab_Body;
-      E116 := E116 + 1;
+      E147 := E147 + 1;
+      System.Storage_Pools'Elab_Spec;
+      E138 := E138 + 1;
+      System.Finalization_Masters'Elab_Spec;
+      System.Finalization_Masters'Elab_Body;
+      E136 := E136 + 1;
       Ada.Strings.Unbounded'Elab_Spec;
       Ada.Strings.Unbounded'Elab_Body;
-      E155 := E155 + 1;
+      E108 := E108 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E106 := E106 + 1;
-      Chiffre'Elab_Spec;
-      E140 := E140 + 1;
-      E142 := E142 + 1;
-      Rangee'Elab_Spec;
-      E146 := E146 + 1;
-      Grille'Elab_Spec;
-      E144 := E144 + 1;
-      E122 := E122 + 1;
-      Remplir_Grille_Takuzu'Elab_Spec;
-      E153 := E153 + 1;
-      E151 := E151 + 1;
-      Pile_Tcc'Elab_Spec;
-      E148 := E148 + 1;
-      E176 := E176 + 1;
+      E143 := E143 + 1;
+      E134 := E134 + 1;
+      A_Tester_Coordonnees'Elab_Spec;
+      E005 := E005 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
-   pragma Import (Ada, Ada_Main_Program, "_ada_tests_resolution_takuzu");
+   pragma Import (Ada, Ada_Main_Program, "_ada_run_tests_coordonnees");
 
    function main
      (argc : Integer;
@@ -279,32 +275,12 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-<<<<<<< HEAD
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\chiffre.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coordonnee.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\coord_chiffres.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\rangee.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\grille.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\affichage.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\remplir_grille_takuzu.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tad_pile.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\pile_tcc.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\resolution_takuzu.o
-   --   C:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\tests_resolution_takuzu.o
-   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\
-   --   -LC:\Users\ember\OneDrive\Documents\BUT\S1\SAE\SAE102\takuzu-solver\obj\
-=======
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\chiffre.o
    --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\coordonnee.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\rangee.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\grille.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\affichage.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\remplir_grille_takuzu.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\resolution_takuzu.o
-   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\tests_resolution_takuzu.o
+   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\types_tests.o
+   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\a_tester_Coordonnees.o
+   --   C:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\run_tests_Coordonnees.o
    --   -LC:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\
    --   -LC:\Users\brice\Autres\Documents\GitHub\takuzu-solver\obj\
->>>>>>> ac62ca94ca7d3385bb1768a14c8c01d111b1215e
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

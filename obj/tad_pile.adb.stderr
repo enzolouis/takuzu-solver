@@ -1,0 +1,4 @@
+tad_pile.adb:15:36: warning: estVide unimplemented [enabled by default]
+tad_pile.adb:25:36: warning: dernier unimplemented [enabled by default]
+tad_pile.adb:35:36: warning: empiler unimplemented [enabled by default]
+tad_pile.adb:45:36: warning: depiler unimplemented [enabled by default]

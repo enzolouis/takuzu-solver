@@ -23,7 +23,7 @@ package Rangee is
 
    -- retourne le chiffre place a l'indice i de la rangee r
    -- necessite 0 < i <= taille(r)
-   -- leve l'exception TRANCHE_INVALIDE si i < 1 ou i > taille(r)
+   -- leve l'exception TRANCHE_INVALIDE si i < 1 ou taille(r) < i
    function ObtenirChiffre
      (R : in Type_Rangee; I : in Integer) return Type_Chiffre;
 

@@ -6,15 +6,11 @@ package body Coordonnee is
    ---------------------------
 
    function ConstruireCoordonnees (Ligne, Colonne : in Integer) return Type_Coordonnee is
-
       coord : Type_Coordonnee;
-
    begin
-
       coord.Ligne := Ligne;
       coord.Colonne := Colonne;
       return coord;
-
    end ConstruireCoordonnees;
 
    ------------------
@@ -22,11 +18,8 @@ package body Coordonnee is
    ------------------
 
    function ObtenirLigne (C : in Type_Coordonnee) return Integer is
-
    begin
-
       return C.Ligne;
-
    end ObtenirLigne;
 
    --------------------
@@ -34,11 +27,8 @@ package body Coordonnee is
    --------------------
 
    function ObtenirColonne (C : in Type_Coordonnee) return Integer is
-
    begin
-
       return C.Colonne;
-
    end ObtenirColonne;
 
 end Coordonnee;
