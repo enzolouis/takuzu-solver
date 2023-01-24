@@ -39,7 +39,7 @@ package Resolution_Takuzu is
 
 	function Is_Valid(G:in Type_Grille) return Boolean;
 
-	function Depiler_V2 (Pile : in Type_Pile) return Type_Pile;
+	procedure Depiler_V2 (Pile : in out Type_Pile; g : in out Type_Grille);
 
    procedure ResoudreTakuzu (g : in out Type_Grille; trouve: out Boolean);
 

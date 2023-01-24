@@ -49,21 +49,21 @@ begin
    g8 := Lire_Grille("g8.txt");
 
 
-	-- test is_valid vite fait
+	-- test is_valid
 	--if is_valid(g0) and is_valid(g1) and is_valid(g2) and is_valid(g3) and is_valid(g4) then
 	--	put("test");
 	--end if;
 
    -- On les teste une par une
    test (g0, "***  Takuzu tres facile taille 6 : grille 0   ***");
-   --test (g1, "*** Takuzu grille tres tres facile : grille 1 ***");
-   --test (g2, "***    Takuzu grille tres facile : grille 2   ***");
-   --test (g3, "***    Takuzu grille tres facile : grille 3   ***");
-   --test (g4, "***      Takuzu grille moyenne : grille 4     ***");
-   --test (g5, "***     Takuzu grille difficile : grille 5    ***");
-   --test (g6, "***  Takuzu grille tres difficile : grille 6  ***");
-   --test (g7, "***     Takuzu grille taille 10 : grille 7    ***");
-   --test (g8, "***     Takuzu grille taille 12 : grille 8    ***");
+   test (g1, "*** Takuzu grille tres tres facile : grille 1 ***");
+   test (g2, "***    Takuzu grille tres facile : grille 2   ***");
+   test (g3, "***    Takuzu grille tres facile : grille 3   ***");
+   test (g4, "***      Takuzu grille moyenne : grille 4     ***");
+   test (g5, "***     Takuzu grille difficile : grille 5    ***");
+   test (g6, "***  Takuzu grille tres difficile : grille 6  ***");
+   test (g7, "***     Takuzu grille taille 10 : grille 7    ***");
+   test (g8, "***     Takuzu grille taille 12 : grille 8    ***");
 
 
 

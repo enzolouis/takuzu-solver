@@ -24,6 +24,7 @@ package TAD_Pile is
    -- supprime l'element le plus recent de la pile
    function depiler (pile : in Type_Pile) return Type_Pile;
 
+
 private
 
    type Tableau is array (1 .. TAILLE_MAX) of T;
