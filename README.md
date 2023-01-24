@@ -46,8 +46,9 @@ Le Takuzu est un jeu de réflexion consistant à remplir une grille à l'origine
 ### Première méthode naïve : Utilisation de 4 règles simple, dérivées et traduites des règles du Takuzu :
 
 	Règle A : Y a-t-il 2 cases côte à côte à la gauche ou à la droite de la case courante contenant le même chiffre (Ligne & Colonne) ?
-	| 0 | 1 | 1 |   |   |   |
-	|:-:|:-:|:-:|:-:|:-:|:-:|
+
+| 0 | 1 | 1 |   |   |   |
+|:-:|:-:|:-:|:-:|:-:|:-:|
 
 	-> Oui, alors remplir la case courante avec le complément du chiffre
 	| 0 | 1 | 1 | 0 |   |   |
