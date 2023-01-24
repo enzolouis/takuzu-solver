@@ -4,7 +4,7 @@
 
 Le Takuzu est un jeu de réflexion consistant à remplir une grille à l'origine partiellement rempli par des déductions logiques en suivant quelques simples règles :
 
-1. Chaque ligne ou colonne ne doit pas comporter plus de deux 0 ou deux 1 à la suite;
+1. Chaque ligne ou colonne ne doit pas comporter plus de deux 0 ou deux 1 à la suite;<br>
 | 0 | 1 | 1 | 1 | 0 | 0 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 
