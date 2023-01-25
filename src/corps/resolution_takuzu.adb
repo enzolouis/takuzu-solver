@@ -201,8 +201,9 @@ package body Resolution_Takuzu is
       for x in 1 .. Taille (G) loop
          for y in x .. Taille (G) loop
             if x /= y then
-               if extraireLigne (G, x) = extraireLigne (G, y) then
-                  return False;
+               if extraireLigne (G, x) = extraireLigne (G, y) and nombreChiffresConnus(extraireLigne(G, x)) = Taille(G) and nombreChiffresConnus(extraireLigne(G, y)) = Taille(G) then
+					--put("REGLE D LIGNE");put(x);put(y);put(nombreChiffresConnus(extraireLigne(G, x)));put(nombreChiffresConnus(extraireLigne(G, y)));put("----");
+					return False;
                end if;
             end if;
          end loop;
@@ -215,7 +216,8 @@ package body Resolution_Takuzu is
       for x in 1 .. Taille (G) loop
          for y in x .. Taille (G) loop
             if x /= y then
-               if extraireColonne (G, x) = extraireColonne (G, y) then
+               if extraireColonne (G, x) = extraireColonne (G, y) and nombreChiffresConnus(extraireColonne(G, x)) = Taille(G) and nombreChiffresConnus(extraireColonne(G, y)) = Taille(G) then
+					-- put("REGLE D LIGNE");	put(x);put(y);put(nombreChiffresConnus(extraireColonne(G, x)));put(nombreChiffresConnus(extraireColonne(G, y)));put("----");
                   return False;
                end if;
             end if;
@@ -300,6 +302,10 @@ package body Resolution_Takuzu is
          end if;
       end loop;
 		
+		if not RegleDColonne(G) or not RegleDLigne(G) then
+		--	AfficherGrille(g);
+			return false;
+		end if;
 		
 			
       return True;
