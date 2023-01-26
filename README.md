@@ -83,7 +83,7 @@ Le Takuzu est un jeu de réflexion consistant à remplir une grille à l'origine
 | 1 | 1 | 0 | 0 | 0 | 1 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 
-	Règle D : La grille ne peut posséder 2 mêmes lignes ou 2 mêmes colonnes
+	(Règle D : La grille ne peut posséder 2 mêmes lignes ou 2 mêmes colonnes)
 
 Avec ces 4 règles, on peut résoudre 4 grilles entièrement sur les 9 (voir dossier grilles).
 
@@ -93,6 +93,7 @@ On se base sur la validité de la grille en respectant les deux premières règl
 
 1. S'il y a plus de deux 0 ou deux 1 dans une même ligne ou colonne : la grille n'est pas valide
 2. Si le nombre de 0 ou de 1 est supérieur à n / 2 soit n la taille d'une rangée de la grille : la grille n'est pas valide
+3. Si deux lignes/colonnes sont identique : la grille n'est pas valide
 
 Le principe est de se déplacer à chaque tour de boucle à la première case vide disponible puis :
 
