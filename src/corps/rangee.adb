@@ -1,3 +1,6 @@
+with ada.Text_IO; use ada.Text_IO;
+with ada.Integer_Text_IO; use ada.Integer_Text_IO;
+
 package body rangee is
 
 	function ConstruireRangee (T : in Integer) return Type_Rangee is
@@ -129,11 +132,11 @@ package body rangee is
 		RR : Type_Rangee;
 	begin
 		--levee d'exception
-      		if I < 1 or taille(R) < I then
+      	if I < 1 or taille(R) < I then
 			raise TRANCHE_INVALIDE;
-      		end if;
+    	end if;
 		--corps du sous-programme
-      		RR := R;
+      	RR := R;
 		RR.R(I) := C;
 		return RR;
 	end AjouterChiffre;
@@ -141,11 +144,11 @@ package body rangee is
 	function RetirerChiffre (R : in Type_Rangee; I : in Integer) return Type_Rangee is
 		RR : Type_Rangee;
 	begin
-		--levee d'exception
 		if I < 1 or taille(R) < I then
 			raise TRANCHE_INVALIDE;
 		end if;
 		--corps du sous programme
+		RR := R;
 		RR.R(I) := INCONNU;
 		return RR;
    	end RetirerChiffre;
@@ -163,5 +166,4 @@ package body rangee is
       		end if;
       		return True;
 	end "=";
-
 end rangee;
