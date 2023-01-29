@@ -1,6 +1,3 @@
-with ada.Text_IO; use ada.Text_IO;
-with ada.Integer_Text_IO; use ada.Integer_Text_IO;
-
 package body rangee is
 
 	function ConstruireRangee (T : in Integer) return Type_Rangee is
